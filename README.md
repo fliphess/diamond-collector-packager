@@ -11,6 +11,22 @@ After building, you can easily enabled packages by running
 
     apt-get install -y diamond-collector-<name>
 
+## Settings file
+
+Each package has it's own section in settings.yml
+```yml
+
+diamond-collector-cpu:     # Package name 
+  name:  CPUCollector      # Collector name
+  dir: collectors/cpu      # Directory with your own custom collectors (optional)
+  deps: 
+    - procps               # List of dependent debian packages (optional)
+  content:            
+    - 'enabled = True'     # First line of the collector config file
+    - 'percore = False'    # Second line of the collector config file
+    ...
+
+```
 
 ## Building
     
@@ -28,21 +44,3 @@ After building, you can easily enabled packages by running
 
 See [here](https://gist.github.com/fliphess/c01298a307c5c23fcc56) (for debian)
 and [here](https://gist.github.com/fliphess/9cffebbe8421189da931) (for ubuntu)
-
-
-## Settings file
-
-Each package has it's own section in settings.yml
-```yml
-
-diamond-collector-cpu:     # Package name 
-  name:  CPUCollector      # Collector name
-  dir: collectors/cpu      # Directory with your own custom collectors (optional)
-  deps: 
-    - procps               # List of dependent debian packages (optional)
-  content:            
-    - 'enabled = True'     # First line of the collector config file
-    - 'percore = False'    # Second line of the collector config file
-    ...
-
-```
