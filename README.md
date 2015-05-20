@@ -4,10 +4,15 @@ This script generates all configuration files needed to package diamond collecto
 
 Each diamond collector can be enabled by installing the corresponding package.
 
-In settings.yml you define the collector name and the content of the collectors config file.
-After running the create packages script, all config files are generated to build.
+In settings.yml you define the diamond collector name and the content of the collectors config file.
+After running the create packages script, all config files needed to build are generated.
 
-After building, you can easily enabled packages by running 
+This script generates several files:
+* A collector config file: /etc/diamond/collectors/<collector_name>.conf for each collector defined in settings.yml
+* A debian/<package name>.install file that moves this collector config file and optionally custom collectors to the default location when installing on a debian or ubuntu server.
+* A debian/control file containing all collector package definitions.
+
+After running this script, building and uploading your package to a ppa or repository server, you can easily enable diamond collectors by running:
 
     apt-get install -y diamond-collector-<name>
 
@@ -44,3 +49,4 @@ diamond-collector-cpu:     # Package name
 
 See [here](https://gist.github.com/fliphess/c01298a307c5c23fcc56) (for debian)
 and [here](https://gist.github.com/fliphess/9cffebbe8421189da931) (for ubuntu)
+
