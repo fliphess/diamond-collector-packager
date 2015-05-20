@@ -37,9 +37,9 @@ Each package has it's own section in settings.yml
 
 diamond-collector-cpu:     # Package name 
   name:  CPUCollector      # Collector name
-  dir: collectors/cpu      # Directory with your own custom collectors
+  dir: collectors/cpu      # Directory with your own custom collectors (optional)
   deps: 
-    - procps               # List of dependent debian packages
+    - procps               # List of dependent debian packages (optional)
   content:            
     - 'enabled = True'     # First line of the collector config file
     - 'percore = False'    # Second line of the collector config file
