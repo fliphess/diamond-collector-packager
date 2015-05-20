@@ -54,7 +54,7 @@ diamond-collector-postfix:
   deps: [python-postfix-stats]
   content:
     - 'enabled = True'
-    - "host = 'localhost'"
+    - "host = '127.0.0.1'"
     - 'port = 7777'
     - 'include_clients = True'
 
