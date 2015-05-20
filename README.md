@@ -39,7 +39,7 @@ diamond-collector-cpu:     # Package name
     # Commit all changes in git
     git add . --all ; git commit -am "commit message"
 
-    # Build debian packages
+    # Build debian packages in a cow using pbuilder
     time git-buildpackage --git-pbuilder --git-dist=trusty --git-arch=amd64 --git-ignore-branch --git-ignore-new 
 
 
