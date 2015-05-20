@@ -4,7 +4,7 @@ This script generates all configuration files needed to package diamond collecto
 
 Each diamond collector can be enabled by installing the corresponding package.
 
-In settings you define the collector name and the content of the collectors config file.
+In settings.yml you define the collector name and the content of the collectors config file.
 After running the create packages script, all config files are generated to build.
 
 After building, you can easily enabled packages by running 
