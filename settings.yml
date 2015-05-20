@@ -63,8 +63,8 @@ diamond-collector-ping:
   content: 
     - 'enabled = True'
     - 'interval = 60'
-    - 'target_google = 8.8.4.4'
-    - 'target_fw = 87.253.141.241'
+    - "target_google = '8.8.4.4'"
+    - "target_fw = '87.253.141.241'"
 
 diamond-collector-procstat:
   name: ProcessStatCollector
