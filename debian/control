@@ -1,0 +1,128 @@
+
+Source: diamond-collector-builder
+Maintainer: Flip Hess <flip@fliphess.com>
+Homepage: http://www.fliphess.com
+Section: python
+Priority: extra
+Standards-Version: 3.9.4
+Build-Depends: debhelper (>= 7)
+
+Package: diamond-collector-softinterrupt
+Description: downtek diamond collector 
+Architecture: all
+Depends: diamond
+
+Package: diamond-collector-postfix
+Description: downtek diamond collector 
+Architecture: all
+Depends: diamond, python-postfix-stats
+
+Package: diamond-collector-interrupt
+Description: downtek diamond collector 
+Architecture: all
+Depends: diamond
+
+Package: diamond-collector-cpu
+Description: downtek diamond collector 
+Architecture: all
+Depends: diamond
+
+Package: diamond-collector-mountstats
+Description: downtek diamond collector 
+Architecture: all
+Depends: diamond
+
+Package: diamond-collector-memory
+Description: downtek diamond collector 
+Architecture: all
+Depends: diamond
+
+Package: diamond-collector-loadaverage
+Description: downtek diamond collector 
+Architecture: all
+Depends: diamond
+
+Package: diamond-collector-diskusage
+Description: downtek diamond collector 
+Architecture: all
+Depends: diamond
+
+Package: diamond-collector-monit
+Description: downtek diamond collector 
+Architecture: all
+Depends: diamond
+
+Package: diamond-collector-ping
+Description: downtek diamond collector 
+Architecture: all
+Depends: diamond
+
+Package: diamond-collector-sockstat
+Description: downtek diamond collector 
+Architecture: all
+Depends: diamond
+
+Package: diamond-collector-slabinfo
+Description: downtek diamond collector 
+Architecture: all
+Depends: diamond
+
+Package: diamond-collector-vmstat
+Description: downtek diamond collector 
+Architecture: all
+Depends: diamond
+
+Package: diamond-collector-procstat
+Description: downtek diamond collector 
+Architecture: all
+Depends: diamond
+
+Package: diamond-collector-users
+Description: downtek diamond collector 
+Architecture: all
+Depends: diamond
+
+Package: diamond-collector-entropystats
+Description: downtek diamond collector 
+Architecture: all
+Depends: diamond
+
+Package: diamond-collector-memory-docker
+Description: downtek diamond collector 
+Architecture: all
+Depends: diamond
+
+Package: diamond-collector-diskspace
+Description: downtek diamond collector 
+Architecture: all
+Depends: diamond
+
+Package: diamond-collector-network
+Description: downtek diamond collector 
+Architecture: all
+Depends: diamond
+
+Package: diamond-collector-ntpd
+Description: downtek diamond collector 
+Architecture: all
+Depends: diamond
+
+Package: diamond-collector-filestat
+Description: downtek diamond collector 
+Architecture: all
+Depends: diamond
+
+Package: diamond-collector-unbound
+Description: downtek diamond collector 
+Architecture: all
+Depends: diamond
+
+Package: diamond-collector-uptime
+Description: downtek diamond collector 
+Architecture: all
+Depends: diamond
+
+Package: diamond-collector-conntrack
+Description: downtek diamond collector 
+Architecture: all
+Depends: diamond

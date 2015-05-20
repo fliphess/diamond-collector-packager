@@ -1,0 +1,128 @@
+diamond-collector-cpu:
+  name:  CPUCollector
+  content: 
+    - 'enabled = True'
+    - 'percore = False'
+
+diamond-collector-diskspace:
+  name: DiskSpaceCollector
+  content:
+    - 'enabled = True'
+
+diamond-collector-diskusage:
+  name: DiskUsageCollector
+  content:
+    - 'enabled = True'
+
+diamond-collector-filestat:
+  name: FilestatCollector
+  content: 
+    -  'enabled = True'
+
+diamond-collector-interrupt:
+  name: InterruptCollector
+  content:
+    - 'enabled = True'
+
+diamond-collector-loadaverage:
+  name: LoadAverageCollector
+  content:
+    - 'enabled = True'
+
+diamond-collector-memory:
+  name: MemoryCollector
+  content:
+    - 'enabled = True'
+
+diamond-collector-ntpd:
+  name: NtpdCollector
+  content:
+    - 'enabled = True'
+
+diamond-collector-uptime:
+  name: UptimeCollector
+  content:
+    - 'enabled = true'
+
+diamond-collector-vmstat:
+  name: VMStatCollector
+  content:
+    - 'enabled = True'
+
+diamond-collector-postfix:
+  name: PostfixCollector
+  deps: [python-postfix-stats]
+  content:
+    - 'enabled = True'
+    - "host = 'localhost'"
+    - 'port = 7777'
+    - 'include_clients = True'
+
+diamond-collector-ping:
+  name: PingCollector
+  content: 
+    - 'enabled = True'
+    - 'interval = 60'
+    - 'target_google = 8.8.4.4'
+    - 'target_fw = 87.253.141.241'
+
+diamond-collector-procstat:
+  name: ProcessStatCollector
+  content: 
+    - 'enabled = True'
+
+diamond-collector-slabinfo:
+  name: SlabInfoCollector
+  content:
+    - 'enabled = True'
+
+diamond-collector-sockstat:
+  name: SockstatCollector
+  content: 
+    - 'enabled = True'
+
+diamond-collector-softinterrupt:
+  name: SoftInterruptCollector
+  content:
+    - 'enabled = True'
+
+diamond-collector-unbound:
+  name: UnboundCollector
+  content:
+    - 'enabled = True'
+    - 'histogram = True'
+
+diamond-collector-users:
+  name: UsersCollector
+  content:
+    - 'enabled = True'
+
+diamond-collector-network:
+  name: NetworkCollector
+  content:
+    - 'enabled = True'
+
+diamond-collector-mountstats:
+  name: MountStatsCollector
+  content:
+    - 'enabled = True'
+
+diamond-collector-conntrack:
+  name: ConnTrackCollector
+  content:
+    - 'enabled = True'
+
+diamond-collector-entropystats:
+  name: EntropyStatCollector
+  content:
+    - 'enabled = True'
+
+diamond-collector-memory-docker:
+  name: MemoryDockerCollector
+  content:
+    - 'enabled = True'
+
+diamond-collector-monit:
+  name: MonitCollector
+  content:
+    - 'enabled = True'
