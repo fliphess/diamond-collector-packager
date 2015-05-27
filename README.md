@@ -6,8 +6,8 @@ In settings.yml you define the diamond collector name and the content of the col
 After running the create packages script, all config files needed to build are generated.
 
 This script generates several files:
-* A collector config file: /etc/diamond/collectors/<collector_name>.conf for each collector defined in settings.yml
-* A debian/<package name>.install file that moves this collector config file and optionally custom collectors to the default location when installing on a debian or ubuntu server.
+* A collector config file: /etc/diamond/collectors/collector_name.conf for each collector defined in settings.yml
+* A debian/package_name.install file that moves this collector config file and optionally custom collectors to the default location when installing on a debian or ubuntu server.
 * A debian/control file containing all collector package definitions.
 
 After running this script, building and uploading your package to a ppa or repository server, you can easily enable diamond collectors by running:
